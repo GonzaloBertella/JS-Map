@@ -1,0 +1,113 @@
+html {
+  overflow-y: scroll;
+}
+body{
+	background: url("https://www.elciudadanoweb.com/wp-content/uploads/2018/05/Fondo-degrade.png" );
+	background-size: cover;
+	background-position: center center;  
+	background-repeat: no-repeat;
+	width: 100%;
+	height: auto;
+}
+
+.container-fluid1 {
+  background: linear-gradient(rgba(246,157,60, 0.8), rgba(255,0,0, 0.6));
+  width: 100%;
+  margin-top: 113px;
+  margin-bottom: 0px !important;
+  position: relative;
+  padding: 10px 80px 23.5px 80px;
+}
+
+.img1{
+  height: 260px;
+  width: 350px;
+  margin-bottom: 5px;
+  padding: 10px; 
+  margin: 10px;
+  float: right;
+  margin-right: -700px;
+}
+
+
+.p {
+  margin-top: 5%;
+  font-size: 50px;
+  text-align: left;
+  font-family: 'Helvetica', cursive;
+  text-shadow: 2px 2px 2px black;
+  color:white;
+  
+}
+#Section1{
+  background:  linear-gradient( rgba(45, 133, 174, 0.1) , rgba(85, 133, 174, 0.7));
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(58, 178, 160, 0.7);
+  overflow: hidden;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 70%;
+  font-family: Arial,Helvetica, sans-serif;
+  text-shadow: 2px 2px 2px black;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3)
+}
+
+#map{
+  width: 110vh;
+  height: 60vh;
+  padding-bottom:5%;
+}
+
+#footer{
+  background-color: rgba(45, 133, 174, 0.5);
+}
+
+#realizarconsulta{
+	background-color: rgba(45, 133, 174, 0.5);
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  text-shadow: 2px 2px 2px black;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  animation: pulse 1.5s infinite;
+}
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto ;
+}
+
+@keyframes pulse{
+	0%{
+		transform: scale(.99);
+		box-shadow: 0 0 0 0 rgba(256,256,256,.4);
+	}
+	70%{
+		transform: scale(1);
+		box-shadow: 0 0 0 20px rgba(256,256,256,0);
+	}
+	100%{
+		transform: scale(.99);
+		box-shadow: 0 0 0 0 rgba(256,256,256,0);
+	}
+}
+
+
+/*   Transicion Navbar   */
+
+.bg-prima{
+
+    transition: all 2s ease;
+    background: linear-gradient(rgba(246,157,60, 0.8), rgba(255,0,0, 0.6));
+  }
+ .bg-inverso{
+   background: linear-gradient(rgba(0,0,0, 0.5), rgba(255,255,255, 0.10));
+ }

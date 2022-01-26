@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+  <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./principal.css">
+
+  <title>Gonzalo Bertella Programador</title>
+
+
+
+</head>
+
+
+<body>
+
+
+  <!-- Navegador -->
+  <section>
+    <nav id="menu" class="navbar navbar-expand-lg navbar-light fixed-top bg-prima ">
+      <a class="navbar-brand" href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9SQaG6pRpgaXM3GCHZPc_ihNFVRpei0Iy_g&usqp=CAU"
+          width="70" height="50" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="#" style="text-shadow: 1px 1px 1px black;">TP <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="text-shadow: 1px 1px 1px black;">111944</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" style="text-shadow: 1px 1px 1px black;">Bertella Gonzalo</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </section>
+
+
+
+<!-- Punto 1 - Caratula Nombre , Apellido , Legajo y Curso -->
+  <div class="container-fluid1 mx-auto">
+    <div class="row justify-content-center mt-4 ">
+      <div class="col-md-10">
+        <div class="row mt-2">
+          <div>
+            <h1 class="heading">Trabajo Final Programación 3</h1>
+            <div class="p">
+              <p> Bertella Gonzalo
+              <p> Legajo - 111944 </p>
+              <p> 2w1 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Punto 2 - Boton para peticion a la Api -->
+  <section class="container" id="Section1">
+
+    <div class="form-group col-sm-12 pt-2">
+      <button class="btn btn-primary " id="realizarconsulta">Realice su Consulta</button>
+    </div>
+
+    <!-- Punto 3 - MAPA -->
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-12" id="map">
+          <div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <hr class="p-0 m-0 b-0">
+    <div class="bg-light py-2">
+      <div class="container text-center">
+        <p class="text-muted mb-0 py-2">© 2021 TP-Programación-Bertella Gonzalo.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
+
+  <!-- Funcion para NavBar -->
+  <script>
+    $(window).scroll(function () {
+      if ($("#menu").offset().top > 95) {
+        $("#menu").addClass("bg-inverso");
+      } else {
+        $("#menu").removeClass("bg-inverso");
+      }
+    });
+  </script>
+
+</body>
+
+</html>
